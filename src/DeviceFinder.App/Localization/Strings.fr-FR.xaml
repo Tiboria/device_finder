@@ -1,0 +1,291 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    xml:space="preserve">
+    <!-- Device Finder — chaînes d'interface, français (fr-FR). -->
+
+    <!-- ==== Titre, barre du haut ==== -->
+    <sys:String x:Key="S.Ui.MainTitle">Device Finder — détection des équipements RJ45</sys:String>
+    <sys:String x:Key="S.Ui.AdapterLabel">Carte Ethernet à surveiller :</sys:String>
+    <sys:String x:Key="S.Ui.LanguageLabel">Langue :</sys:String>
+    <sys:String x:Key="S.Ui.Refresh">Rafraîchir</sys:String>
+
+    <!-- ==== Bandeaux ==== -->
+    <sys:String x:Key="S.Ui.InstallNpcap">Installer Npcap…</sys:String>
+    <sys:String x:Key="S.Ui.DisableDhcp">Désactiver le serveur DHCP</sys:String>
+    <sys:String x:Key="S.Ui.RemoveAliases">Supprimer ces alias</sys:String>
+
+    <!-- ==== Onglets / colonnes ==== -->
+    <sys:String x:Key="S.Ui.TabDetection">Détection</sys:String>
+    <sys:String x:Key="S.Ui.TabBrowser">Navigateur</sys:String>
+    <sys:String x:Key="S.Ui.ColMac">Adresse MAC</sys:String>
+    <sys:String x:Key="S.Ui.ColVendor">Constructeur</sys:String>
+    <sys:String x:Key="S.Ui.ColIpDetected">IP détectée</sys:String>
+    <sys:String x:Key="S.Ui.ColIpAssigned">IP attribuée</sys:String>
+    <sys:String x:Key="S.Ui.ColMode">Mode</sys:String>
+    <sys:String x:Key="S.Ui.ColStatus">État</sys:String>
+    <sys:String x:Key="S.Ui.ColLastSeen">Dernière vue</sys:String>
+    <sys:String x:Key="S.Ui.ColExpires">Expire à</sys:String>
+
+    <!-- ==== Actions sur le device ==== -->
+    <sys:String x:Key="S.Ui.OpenWeb">Ouvrir la page web (Entrée)</sys:String>
+    <sys:String x:Key="S.Ui.OpenExternal">Ouvrir dans le navigateur externe</sys:String>
+    <sys:String x:Key="S.Ui.CopyMac">Copier la MAC</sys:String>
+    <sys:String x:Key="S.Ui.CopyIp">Copier l'IP</sys:String>
+    <sys:String x:Key="S.Ui.RestoreNetwork">Restaurer la config réseau</sys:String>
+
+    <!-- ==== Mode IP manuelle ==== -->
+    <sys:String x:Key="S.Ui.ManualGroup">IP manuelle — sonder une IP ou une petite plage</sys:String>
+    <sys:String x:Key="S.Ui.ManualLabel">IP ou plage :</sys:String>
+    <sys:String x:Key="S.Ui.Probe">Sonder</sys:String>
+    <sys:String x:Key="S.Ui.ManualHint">Ex. 10.0.0.50 · 192.168.1.50-60 · 172.16.0.10-172.16.0.20 — pose un alias si besoin puis sonde ; double-clic sur un résultat pour ouvrir sa page web.</sys:String>
+
+    <!-- ==== Panneau de détail ==== -->
+    <sys:String x:Key="S.Ui.DetailGroup">Détail du device sélectionné</sys:String>
+    <sys:String x:Key="S.Ui.DetailIpLabel">IP actuelle :</sys:String>
+    <sys:String x:Key="S.Ui.DetailModeLabel">Mode :</sys:String>
+    <sys:String x:Key="S.Ui.DetailStatusLabel">État :</sys:String>
+    <sys:String x:Key="S.Ui.DetailFirstSeenLabel">Première vue :</sys:String>
+    <sys:String x:Key="S.Ui.DetailLastSeenLabel">Dernière vue :</sys:String>
+    <sys:String x:Key="S.Ui.DetailAliasLabel">IP alias posée :</sys:String>
+    <sys:String x:Key="S.Ui.DetailHistoryLabel">Historique des IP vues :</sys:String>
+    <sys:String x:Key="S.Ui.DetailHistoryEmpty">Aucune autre IP vue.</sys:String>
+    <sys:String x:Key="S.Ui.DetailWebLabel">Page web de ce device :</sys:String>
+    <sys:String x:Key="S.Ui.ProtocolLabel">Protocole :</sys:String>
+    <sys:String x:Key="S.Ui.PortLabel">Port :</sys:String>
+
+    <!-- ==== Serveur DHCP ==== -->
+    <sys:String x:Key="S.Ui.DhcpGroup">Serveur DHCP — attribuer une IP aux équipements en attente DHCP (désactivé par défaut)</sys:String>
+    <sys:String x:Key="S.Ui.Apply">Appliquer</sys:String>
+    <sys:String x:Key="S.Ui.DhcpActiveCheck">Serveur DHCP actif sur la carte sélectionnée</sys:String>
+    <sys:String x:Key="S.Ui.DhcpPoolStart">Début de pool :</sys:String>
+    <sys:String x:Key="S.Ui.DhcpPoolEnd">Fin de pool :</sys:String>
+    <sys:String x:Key="S.Ui.DhcpServerIp">IP du PC sur ce /24 (passerelle) :</sys:String>
+    <sys:String x:Key="S.Ui.DhcpLease">Durée de bail :</sys:String>
+    <sys:String x:Key="S.Ui.LeaseHelpToolTip">Un bail survit à la fermeture du serveur — cliquez pour l'explication complète.</sys:String>
+    <sys:String x:Key="S.Ui.DhcpHint">Par défaut 192.168.99.10 – 192.168.99.20 /24 (sous-réseau volontairement peu utilisé). L'activation pose l'adresse du PC sur ce /24 puis ne répond qu'aux DHCPDISCOVER arrivant sur la carte sélectionnée ; l'équipement reçoit son IP et apparaît dans la liste des devices. Pensez à désactiver le serveur avant de reconnecter le PC à un réseau.</sys:String>
+    <sys:String x:Key="S.Ui.DhcpCountersToolTip">Afficher / masquer les compteurs détaillés du serveur DHCP</sys:String>
+
+    <!-- ==== Navigateur ==== -->
+    <sys:String x:Key="S.Ui.Reload">Actualiser</sys:String>
+    <sys:String x:Key="S.Ui.Go">Aller</sys:String>
+    <sys:String x:Key="S.Ui.AlwaysExternal">Toujours utiliser le navigateur externe</sys:String>
+    <sys:String x:Key="S.Browser.Unavailable">Le runtime WebView2 n'est pas présent sur cette machine : les pages s'ouvrent dans le navigateur externe. Aucun téléchargement n'est tenté (application hors-ligne).</sys:String>
+
+    <!-- ==== Barre de statut (textes initiaux) ==== -->
+    <sys:String x:Key="S.Status.DhcpInactive">DHCP : inactif.</sys:String>
+    <sys:String x:Key="S.Status.DetectionNotStarted">Détection non démarrée.</sys:String>
+    <sys:String x:Key="S.Status.Ready">Prêt.</sys:String>
+
+    <!-- ================= Chaînes construites en code ================= -->
+
+    <!-- ==== Communs ==== -->
+    <sys:String x:Key="Common.Hours">{0} h</sys:String>
+    <sys:String x:Key="Common.Minutes">{0} min</sys:String>
+    <sys:String x:Key="Common.Seconds">{0} s</sys:String>
+    <sys:String x:Key="Common.MinutesSeconds">{0} min {1:D2} s</sys:String>
+    <sys:String x:Key="Common.NoAdapterDetected">Aucune carte Ethernet détectée.</sys:String>
+    <sys:String x:Key="Common.SelectAdapterFirst">Sélectionnez d'abord une carte Ethernet.</sys:String>
+    <sys:String x:Key="Common.SelectAdapterToWatch">Sélectionnez une carte Ethernet à surveiller.</sys:String>
+
+    <!-- ==== Cartes réseau ==== -->
+    <sys:String x:Key="Adapter.NoIpv4">pas d'IPv4</sys:String>
+    <sys:String x:Key="Adapter.Disconnected"> (déconnectée)</sys:String>
+    <sys:String x:Key="Adapter.Virtual"> (virtuelle)</sys:String>
+
+    <!-- ==== Conflits de sous-réseau ==== -->
+    <sys:String x:Key="Conflict.Title">Conflit de sous-réseau</sys:String>
+    <sys:String x:Key="Conflict.Description">« {0} » ({1}) est active dans {2}, qui chevauche le sous-réseau {3} du device.</sys:String>
+    <sys:String x:Key="Conflict.AliasConfirm">Conflit de sous-réseau détecté :&#10;{0}&#10;&#10;Ajouter quand même une adresse temporaire dans le /24 de {1} sur « {2} » ?</sys:String>
+    <sys:String x:Key="Conflict.DhcpConfirm">Conflit de sous-réseau détecté :&#10;{0}&#10;&#10;Activer quand même le serveur DHCP (adresse {1}) sur « {2} » ?</sys:String>
+
+    <!-- ==== IP alias ==== -->
+    <sys:String x:Key="Alias.IpOnAdapter">{0} sur « {1} »</sys:String>
+    <sys:String x:Key="Alias.BulletIpOnAdapter">• {0} sur « {1} »</sys:String>
+    <sys:String x:Key="Alias.Reused">Alias existant réutilisé : {0} sur « {1} ».</sys:String>
+    <sys:String x:Key="Alias.NoFreeAddress">Aucune adresse libre trouvée dans le /24 de {0} (plage .100–.199).</sys:String>
+    <sys:String x:Key="Alias.Adding">Ajout de l'adresse temporaire {0} sur « {1} »…</sys:String>
+    <sys:String x:Key="Alias.RejectedByWindows">{0} refusé (adresse déjà utilisée ou conflit détecté par Windows) — essai avec une autre adresse ({1}/{2})…</sys:String>
+    <sys:String x:Key="Alias.EnsureFailed">Échec de l'ajout d'IP alias après plusieurs essais (voir messages d'état).</sys:String>
+    <sys:String x:Key="Alias.NetshFailed">netsh a échoué (code {0}) : {1}</sys:String>
+    <sys:String x:Key="Alias.DuplicateDetected">Windows a signalé {0} en doublon (DAD) — alias retiré, essai suivant.</sys:String>
+    <sys:String x:Key="Alias.NotActivated">{0} n'a pas pu être activée par Windows (conflit détecté ?) — alias retiré, essai suivant.</sys:String>
+    <sys:String x:Key="Alias.RemoveFailed">Suppression de l'alias {0} : {1}</sys:String>
+    <sys:String x:Key="Alias.DeleteFailed">Échec de la suppression de l'alias {0} : {1}</sys:String>
+
+    <!-- ==== Capture ARP ==== -->
+    <sys:String x:Key="ArpCapture.NoHandle">aucun handle Npcap énuméré (Npcap installé ?) — attendu {0} pour [{1}]</sys:String>
+    <sys:String x:Key="ArpCapture.HandleNotFound">handle Npcap introuvable pour [{0}] (attendu {1}) ; handles disponibles : {2}</sys:String>
+    <sys:String x:Key="ArpCapture.OpenFailed">ouverture de {0} échouée : {1}</sys:String>
+
+    <!-- ==== Bandeau résidus ==== -->
+    <sys:String x:Key="Banner.Residual">Résidus d'une session précédente : {0} IP alias posée(s) par l'application ({1}). Pensez à les supprimer si la session s'est mal terminée.</sys:String>
+
+    <!-- ==== Npcap ==== -->
+    <sys:String x:Key="Npcap.Banner">Capture ARP indisponible — Npcap n'est pas installé. La détection fonctionne toujours (broadcasts, scan APIPA), mais les équipements en IP fixe silencieux ne seront pas détectés.</sys:String>
+    <sys:String x:Key="Npcap.BannerHowTo">Capture ARP indisponible — Npcap n'est pas installé. Cliquez sur « Installer Npcap » : l'installeur intégré (embarqué dans l'application) est extrait et lancé ; la capture démarre ensuite sans redémarrer. En attendant, broadcasts, scan APIPA et mode IP manuelle fonctionnent.</sys:String>
+    <sys:String x:Key="Npcap.DialogTitle">Installation Npcap</sys:String>
+    <sys:String x:Key="Npcap.OpenDialog.Title">Sélectionner l'installeur Npcap</sys:String>
+    <sys:String x:Key="Npcap.OpenDialog.Filter">Installeur Npcap (npcap*.exe)|npcap*.exe|Exécutable (*.exe)|*.exe</sys:String>
+    <sys:String x:Key="Npcap.RestartCapture">{0} Redémarrage de la capture ARP…</sys:String>
+    <sys:String x:Key="Npcap.InstallerNotFound">Installeur introuvable : {0}</sys:String>
+    <sys:String x:Key="Npcap.CannotLaunch">Impossible de lancer l'installeur Npcap.</sys:String>
+    <sys:String x:Key="Npcap.Timeout">L'installation de Npcap n'a pas terminé en {0} s (assistant encore ouvert ?).</sys:String>
+    <sys:String x:Key="Npcap.ExitCode">L'installeur Npcap s'est arrêté avec le code {0} (installation annulée ?).</sys:String>
+    <sys:String x:Key="Npcap.Installed">Npcap a été installé.</sys:String>
+    <sys:String x:Key="Npcap.NotInstalledAfter">L'installeur s'est terminé mais Npcap ne semble pas installé.</sys:String>
+    <sys:String x:Key="Npcap.InstallFailed">Échec de l'installation de Npcap : {0}</sys:String>
+    <sys:String x:Key="Npcap.Installing">Installation en cours…</sys:String>
+    <sys:String x:Key="Npcap.StatusInstalling">Installation de Npcap ({0}) — suivez l'assistant…</sys:String>
+    <sys:String x:Key="Ui.InstallNpcapWithFile">Installer Npcap ({0})</sys:String>
+
+    <!-- ==== Ouverture des pages web ==== -->
+    <sys:String x:Key="Open.NoIpYet">Ce device n'a encore annoncé aucune IP.</sys:String>
+    <sys:String x:Key="Open.TestingReachability">Test de joignabilité de {0}…</sys:String>
+    <sys:String x:Key="Open.Retrying">Device non encore joignable, nouvel essai ({0}/10)…</sys:String>
+    <sys:String x:Key="Open.AliasAdded">Alias {0} posé (le device ne répond toujours pas au ping : page peut-être lente, sur un autre port, ou en HTTPS).</sys:String>
+    <sys:String x:Key="Open.CancelledByConflict">Ouverture annulée (conflit de sous-réseau).</sys:String>
+    <sys:String x:Key="Open.Failed">Échec de l'ouverture.</sys:String>
+    <sys:String x:Key="Open.Error">Erreur pendant l'ouverture : {0}</sys:String>
+
+    <!-- ==== Restauration ==== -->
+    <sys:String x:Key="Restore.NoAlias">Aucune IP alias posée par l'application.</sys:String>
+    <sys:String x:Key="Restore.DhcpActiveDetail">• Serveur DHCP actif sur « {0} » (pool {1} – {2})</sys:String>
+    <sys:String x:Key="Restore.DhcpInactiveDetail">Serveur DHCP : inactif</sys:String>
+    <sys:String x:Key="Restore.WhatHeader">Ce que l'application a posé :</sys:String>
+    <sys:String x:Key="Restore.Confirm">Restaurer la configuration réseau ?&#10;&#10;{0}&#10;{1}&#10;{2}&#10;&#10;Tout supprimer et couper le serveur DHCP ?</sys:String>
+    <sys:String x:Key="Restore.Title">Restaurer la config réseau</sys:String>
+    <sys:String x:Key="Restore.Failed">Restauration échouée : {0}</sys:String>
+    <sys:String x:Key="Restore.Done">Config réseau restaurée : serveur DHCP coupé, aucun alias posé par l'application.</sys:String>
+
+    <!-- ==== Panneau de détail (code) ==== -->
+    <sys:String x:Key="Detail.SelectDevice">Sélectionnez un device dans la liste.</sys:String>
+    <sys:String x:Key="Detail.NoAlias">aucune</sys:String>
+
+    <!-- ==== Devices (affichage) ==== -->
+    <sys:String x:Key="Device.VendorUnknown">Inconnu</sys:String>
+    <sys:String x:Key="Device.ModeFixed">Fixe</sys:String>
+    <sys:String x:Key="Device.ModeApipa">APIPA</sys:String>
+    <sys:String x:Key="Device.ModeDhcp">DHCP</sys:String>
+    <sys:String x:Key="Device.ModeUnknown">Inconnu</sys:String>
+    <sys:String x:Key="Device.Reachable">Joignable</sys:String>
+    <sys:String x:Key="Device.Offline">Hors ligne</sys:String>
+
+    <!-- ==== Mode IP manuelle (code) ==== -->
+    <sys:String x:Key="Manual.StatusReachable">Joignable</sys:String>
+    <sys:String x:Key="Manual.StatusArpOnly">Présente (ARP, pas de ping)</sys:String>
+    <sys:String x:Key="Manual.StatusNoResponse">Aucune réponse</sys:String>
+    <sys:String x:Key="Manual.InvalidAddress">Adresse invalide.</sys:String>
+    <sys:String x:Key="Manual.EmptyInput">Saisissez une adresse IP ou une plage (ex. 192.168.1.50 ou 192.168.1.50-60).</sys:String>
+    <sys:String x:Key="Manual.InvalidRange">Adresse invalide : « {0} ».</sys:String>
+    <sys:String x:Key="Manual.NotSameSubnet">La plage doit rester dans un même sous-réseau /24 (ex. 192.168.1.50-192.168.1.60).</sys:String>
+    <sys:String x:Key="Manual.InvalidRangeEnd">Fin de plage invalide : « {0} ».</sys:String>
+    <sys:String x:Key="Manual.EndBeforeStart">La fin de plage doit être supérieure ou égale au début.</sys:String>
+    <sys:String x:Key="Manual.RangeTooLarge">Plage trop grande : {0} adresses (maximum {1}).</sys:String>
+    <sys:String x:Key="Manual.IsLocalAddress">{0} est une adresse du PC local.</sys:String>
+    <sys:String x:Key="Manual.Ensuring">Préparation du sous-réseau de {0} : pose de l'alias si nécessaire…</sys:String>
+    <sys:String x:Key="Manual.CancelledByConflict">Sonde annulée (conflit de sous-réseau).</sys:String>
+    <sys:String x:Key="Manual.Probing">Sonde en cours : {0} adresse(s)…</sys:String>
+    <sys:String x:Key="Manual.Done">Sonde terminée : {0}/{1} adresse(s) répondente(s).</sys:String>
+    <sys:String x:Key="Manual.DoneWithAlias">Sonde terminée : {0}/{1} adresse(s) répondente(s) (alias {2}).</sys:String>
+    <sys:String x:Key="Manual.Error">Erreur pendant la sonde : {0}</sys:String>
+
+    <!-- ==== Navigateur (code) ==== -->
+    <sys:String x:Key="Browser.RuntimeFailed">Le navigateur intégré (WebView2) n'a pas pu démarrer : {0} Les pages s'ouvrent dans le navigateur externe.</sys:String>
+    <sys:String x:Key="Browser.MissingRuntimeStatus">Runtime WebView2 absent — ouverture dans le navigateur externe.</sys:String>
+    <sys:String x:Key="Browser.MissingRuntimeInput">Runtime WebView2 absent — entrez l'URL depuis le navigateur externe.</sys:String>
+    <sys:String x:Key="Browser.OpenFailed">Impossible d'ouvrir le navigateur : {0}</sys:String>
+
+    <!-- ==== Serveur DHCP (code) ==== -->
+    <sys:String x:Key="Dhcp.BadPoolStart">Début de pool invalide (ex. 192.168.99.10).</sys:String>
+    <sys:String x:Key="Dhcp.BadPoolEnd">Fin de pool invalide (ex. 192.168.99.20).</sys:String>
+    <sys:String x:Key="Dhcp.BadServerIp">IP du PC invalide (ex. 192.168.99.1).</sys:String>
+    <sys:String x:Key="Dhcp.InvalidConfig">Configuration DHCP invalide.</sys:String>
+    <sys:String x:Key="Dhcp.ConfigSavedInactive">Configuration DHCP enregistrée (le serveur est inactif).</sys:String>
+    <sys:String x:Key="Dhcp.LeaseComboHint">Durée de bail : {0} enregistrée — cliquez sur « Appliquer » pour la transmettre (option 51) aux prochains baux.</sys:String>
+    <sys:String x:Key="Dhcp.EnsuringAddr">Préparation du serveur DHCP : pose de {0} sur « {1} »…</sys:String>
+    <sys:String x:Key="Dhcp.CancelledByConflict">Serveur DHCP non activé (conflit de sous-réseau refusé).</sys:String>
+    <sys:String x:Key="Dhcp.EnsureFailed">Échec de la pose de l'adresse {0} sur « {1} » — serveur DHCP non activé.</sys:String>
+    <sys:String x:Key="Dhcp.FirewallCheckFailed">vérification pare-feu impossible ({0}). Créez la règle manuellement (invite admin) : netsh advfirewall firewall add rule name=&quot;Device Finder DHCP&quot; dir=in action=allow protocol=UDP localport=67</sys:String>
+    <sys:String x:Key="Dhcp.FirewallWarning">ATTENTION PARE-FEU : {0}</sys:String>
+    <sys:String x:Key="Dhcp.ActiveStatus">Serveur DHCP actif sur « {0} » — pool {1} – {2}, passerelle {3}, bail {4} (option 51). {5}</sys:String>
+    <sys:String x:Key="Dhcp.StartFailed">Échec du démarrage du serveur DHCP : {0}</sys:String>
+    <sys:String x:Key="Dhcp.Disabled">Serveur DHCP désactivé et son adresse retirée de la carte.</sys:String>
+    <sys:String x:Key="Dhcp.BannerActive">Serveur DHCP actif sur « {0} » — pool {1} – {2}, passerelle {3}. Pense à le désactiver avant de te reconnecter à un réseau.</sys:String>
+    <sys:String x:Key="Dhcp.PortInUse">port {0} déjà occupé par un autre serveur DHCP (service DHCP Windows, partage de connexion/ICS…) — désactivez-le pour utiliser le serveur intégré.</sys:String>
+    <sys:String x:Key="Dhcp.PortUnavailable">port {0} indisponible ({1}) — un autre serveur DHCP (partage de connexion Windows, box…) est-il déjà actif ?</sys:String>
+    <sys:String x:Key="Dhcp.FirewallOk">Pare-feu : règle « UDP 67 entrant » en place pour l'application.</sys:String>
+    <sys:String x:Key="Dhcp.FirewallManual">règle pare-feu UDP 67 impossible à créer ({0}). Créez-la manuellement (invite admin) : netsh advfirewall firewall add rule name=&quot;Device Finder DHCP&quot; dir=in action=allow protocol=UDP localport=67</sys:String>
+    <sys:String x:Key="Dhcp.LeaseBound">Attribuée</sys:String>
+    <sys:String x:Key="Dhcp.LeaseOffered">Offerte</sys:String>
+    <sys:String x:Key="Dhcp.LeaseBoundStopped">Attribuée (serveur arrêté)</sys:String>
+    <sys:String x:Key="Dhcp.ReservedAddresses">Les adresses réseau (.0) et de broadcast (.255) sont réservées.</sys:String>
+    <sys:String x:Key="Dhcp.NotSameSubnet">Le pool et l'IP du PC doivent être dans un même sous-réseau /24.</sys:String>
+    <sys:String x:Key="Dhcp.StartAfterEnd">Le début du pool doit précéder la fin.</sys:String>
+    <sys:String x:Key="Dhcp.PoolTooLarge">Pool trop grand : {0} adresses (maximum {1}).</sys:String>
+    <sys:String x:Key="Dhcp.ServerIpInsidePool">L'IP du PC ({0}) doit être en dehors du pool {1} – {2}.</sys:String>
+    <sys:String x:Key="Dhcp.PoolContainsLocalIp">{0} est une adresse du PC local : le pool ne doit pas la contenir.</sys:String>
+    <sys:String x:Key="Dhcp.RecvError">DHCP : erreur de réception n°{0} : {1}</sys:String>
+    <sys:String x:Key="Dhcp.HandleError">DHCP : traitement d'un datagramme échoué : {0}</sys:String>
+    <sys:String x:Key="Dhcp.DiagSuffix">{0} — diag : {1}</sys:String>
+    <sys:String x:Key="Dhcp.DiagBytes"> octets : tête=</sys:String>
+    <sys:String x:Key="Dhcp.DiagCookie">cookie/options(236+)</sys:String>
+    <sys:String x:Key="Dhcp.NonDhcpIgnored">DHCP : datagramme non-DHCP ignoré (n° {0}) : {1}</sys:String>
+    <sys:String x:Key="Dhcp.HintOption53Missing">option 53 introuvable dans les options</sys:String>
+    <sys:String x:Key="Dhcp.HintUnhandledType">seuls DISCOVER/REQUEST/DECLINE/RELEASE sont traités</sys:String>
+    <sys:String x:Key="Dhcp.UnknownType">DHCP : message de type {0} non traité — {1}. Diag : {2}</sys:String>
+    <sys:String x:Key="Dhcp.RelayRejected">DHCP : requête de {0} rejetée (derrière un relais, giaddr={1}) — liaison directe uniquement.</sys:String>
+    <sys:String x:Key="Dhcp.PoolExhausted">DHCP : DISCOVER de {0} ignoré — pool {1} – {2} épuisé.</sys:String>
+    <sys:String x:Key="Dhcp.OfferSent">DHCP : OFFER {0} → {1} (en attente de confirmation du client).</sys:String>
+    <sys:String x:Key="Dhcp.AckSent">DHCP : ACK {0} → {1} — adresse attribuée.</sys:String>
+    <sys:String x:Key="Dhcp.NakSent">DHCP : NAK envoyé à {0} (aucune offre correspondante).</sys:String>
+    <sys:String x:Key="Dhcp.LeaseReleased">DHCP : {0} de {1} — bail libéré.</sys:String>
+    <sys:String x:Key="Dhcp.ReleaseNoLease">DHCP : {0} de {1} reçu sans bail correspondant — ignoré (compté).</sys:String>
+    <sys:String x:Key="Dhcp.SendFailed">DHCP : échec de l'envoi de la réponse ({0}).</sys:String>
+    <sys:String x:Key="Dhcp.RejectTooShort">BOOTP trop court : {0} octets reçus, 240 minimum</sys:String>
+    <sys:String x:Key="Dhcp.RejectNotBootp">pas une requête BOOTP/Ethernet : op={0}, htype={1}, hlen={2}</sys:String>
+    <sys:String x:Key="Dhcp.RejectCookie">cookie DHCP absent : octets 236-239 = {0:X2} {1:X2} {2:X2} {3:X2} (63 82 53 63 attendus)</sys:String>
+    <sys:String x:Key="Dhcp.RejectNullChaddr">chaddr nulle</sys:String>
+
+    <!-- ==== Fenêtre d'aide sur le bail ==== -->
+    <sys:String x:Key="LeaseHelp.Title">Durée de bail DHCP — ce que ça change vraiment</sys:String>
+    <sys:String x:Key="LeaseHelp.Heading">Pourquoi la durée de bail compte</sys:String>
+    <sys:String x:Key="LeaseHelp.Bullet1">Le bail survit à la fermeture du serveur : l'équipement garde son IP jusqu'à expiration ou libération manuelle.</sys:String>
+    <sys:String x:Key="LeaseHelp.Bullet2">Court (5-10 min) : le banc redevient propre tout seul après chaque session.</sys:String>
+    <sys:String x:Key="LeaseHelp.Bullet3">Long (12-24 h) : convivial pour une démo prolongée, mais l'équipement gardera son IP même app fermée.</sys:String>
+    <sys:String x:Key="LeaseHelp.Footer">La durée est transmise aux équipements dans l'option DHCP 51 (OFFER et ACK). Elle est modifiable dans la liste « Durée de bail » ; cliquez sur « Appliquer » si le serveur tourne déjà.</sys:String>
+    <sys:String x:Key="LeaseHelp.Close">Fermer (Échap)</sys:String>
+
+    <!-- ==== Barre de statut (code) ==== -->
+    <sys:String x:Key="Status.Ready">Prêt.</sys:String>
+    <sys:String x:Key="Status.DetectionNotStarted">Détection non démarrée.</sys:String>
+    <sys:String x:Key="Status.DhcpInactive">DHCP : inactif.</sys:String>
+    <sys:String x:Key="Status.NoAdapter">aucune carte sélectionnée</sys:String>
+    <sys:String x:Key="Status.Adapter">carte « {0} »</sys:String>
+    <sys:String x:Key="Status.CaptureAbsent">capture ARP : Npcap ABSENT (bouton d'installation dans le bandeau jaune)</sys:String>
+    <sys:String x:Key="Status.CaptureOpen">capture ARP : {0} — {1} trame(s) vue(s), {2} rapportée(s), {3} locale(s) ignorée(s)</sys:String>
+    <sys:String x:Key="Status.CaptureFailed">capture ARP : ÉCHEC — {0}</sys:String>
+    <sys:String x:Key="Status.CaptureNoStart">démarrée sur aucune carte</sys:String>
+    <sys:String x:Key="Status.BroadcastsActive">broadcasts : {0} reçu(s), {1} rejeté(s) (autre carte), {2} résolu(s), {3} sans réponse ARP</sys:String>
+    <sys:String x:Key="Status.BroadcastsIdle">broadcasts : inactifs</sys:String>
+    <sys:String x:Key="Status.DhcpStoppedWithLeases">DHCP : INACTIF · {0} bail(s) de la session en table (marqués « serveur arrêté ») — l'équipement garde son IP jusqu'à expiration du bail.</sys:String>
+    <sys:String x:Key="Status.DhcpLastActivity">dernière activité il y a {0} s</sys:String>
+    <sys:String x:Key="Status.DhcpNoActivity">aucune activité reçue</sys:String>
+    <sys:String x:Key="Status.DhcpActiveCompact">DHCP : ACTIF · {0} bail(s) · {1}</sys:String>
+    <sys:String x:Key="Status.DhcpDetailedInactive">serveur DHCP : inactif.</sys:String>
+    <sys:String x:Key="Status.DhcpDetailedActive">serveur DHCP : ACTIF (port 67) — bail {0}, datagrammes reçus {1}, DISCOVER reçus {2}, OFFER émis {3}, OFFER non confirmées {4}, REQUEST reçus {5}, ACK {6}, NAK {7}, autre serveur {8}, non-DHCP ignorés {9}, types non traités {10}, MAC locale rejetée {11}, relais rejetés {12}, RELEASE/DECLINE {13}, baux attribués {14}, erreurs {15}</sys:String>
+    <sys:String x:Key="Status.ApipaProgress">Scan APIPA : {0} % — {1}</sys:String>
+    <sys:String x:Key="Status.DeviceDetected">Device détecté : {0} ({1})</sys:String>
+    <sys:String x:Key="Status.LanguageChanged">Langue : {0}</sys:String>
+    <sys:String x:Key="Status.MacCopied">MAC copiée : {0}</sys:String>
+    <sys:String x:Key="Status.IpCopied">IP copiée : {0}</sys:String>
+    <sys:String x:Key="Status.PageOpenedExternal">Page ouverte dans le navigateur externe.</sys:String>
+    <sys:String x:Key="Status.PageOpened">Page ouverte : {0}</sys:String>
+    <sys:String x:Key="Status.CleanupFailed">Nettoyage des IP alias échoué : {0}</sys:String>
+    <sys:String x:Key="Status.ResidualRemoved">Alias résiduels supprimés : aucun alias posé par l'application.</sys:String>
+    <sys:String x:Key="Status.ResidualRemoveFailed">Suppression des alias résiduels échouée : {0}</sys:String>
+    <sys:String x:Key="Status.AdaptersRefreshed">Liste des cartes rafraîchie.</sys:String>
+    <sys:String x:Key="Status.DetectionActive">Détection active sur « {0} » : broadcasts + capture ARP + scan APIPA.</sys:String>
+    <sys:String x:Key="Status.DetectionPartial">Écoute des broadcasts + scan APIPA actifs ; capture ARP en échec : {0}</sys:String>
+    <sys:String x:Key="Status.DetectionNoNpcap">Broadcasts + scan APIPA actifs sur « {0} » ; capture ARP indisponible (Npcap absent) — le mode IP manuelle reste pleinement utilisable.</sys:String>
+</ResourceDictionary>

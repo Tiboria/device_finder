@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <!-- Permet de compiler le projet WPF depuis une machine Linux -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <PlatformTarget>x64</PlatformTarget>
+    <RootNamespace>DeviceFinder.App</RootNamespace>
+    <AssemblyName>DeviceFinder</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Resources\app.ico</ApplicationIcon>
+    <!-- Packaging final (étape 5) -->
+    <Version>1.0.0</Version>
+    <Product>Device Finder</Product>
+    <Description>Détection des équipements branchés sur la carte Ethernet du PC</Description>
+    <Authors>Tiboria</Authors>
+    <Company>Tiboria</Company>
+    <Copyright>Tiboria</Copyright>
+    <NeutralLanguage>fr</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2903.40" />
+    <PackageReference Include="SharpPcap" Version="6.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\app.ico" />
+    <Content Include="Resources\oui.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\oui36.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <!-- Installeur Npcap embarqué dans l'exe : un seul fichier autonome sur clé USB. -->
+    <EmbeddedResource Include="Resources\npcap-1.88.exe" LogicalName="DeviceFinder.Resources.npcap-1.88.exe" />
+  </ItemGroup>
+
+</Project>
